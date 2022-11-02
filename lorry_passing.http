@@ -4,5 +4,5 @@ Content-Type: application/json
 {
   "station": "Station One",
   "lorries": 1,
-  "tons": 22
+  "tons": 25
 }

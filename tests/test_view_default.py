@@ -1,6 +1,8 @@
 import pytest
 
-from think_as_tester.views.default import my_view, register_passage, seen_passages
+from think_as_tester.views.default import my_view
+from think_as_tester.views.storage import seen_passages
+from think_as_tester.views.weight_station import register_passage
 from think_as_tester.views.notfound import notfound_view
 from pyramid.testing import DummyRequest
 
