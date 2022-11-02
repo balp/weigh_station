@@ -6,7 +6,7 @@ from pyramid.paster import get_appsettings
 from pyramid.scripting import prepare
 from pyramid.testing import DummyRequest, testConfig
 
-from think_as_tester import main
+from weigh_station import main
 
 
 def pytest_addoption(parser):

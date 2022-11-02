@@ -24,9 +24,9 @@ tests_require = [
 ]
 
 setup(
-    name="think_as_tester",
+    name="weigh_station",
     version="0.0",
-    description="think_as_tester",
+    description="weigh_station",
     long_description=README + "\n\n" + CHANGES,
     classifiers=[
         "Programming Language :: Python",
@@ -47,7 +47,7 @@ setup(
     install_requires=requires,
     entry_points={
         "paste.app_factory": [
-            "main = think_as_tester:main",
+            "main = weigh_station:main",
         ],
     },
 )
