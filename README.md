@@ -24,35 +24,64 @@ Description
 -----------
 
 The applications have a front page that shows the summary of lorries that have passed
-a weigh station. It has an endpoint where the weigh station uploads it's data to be shown. 
+a weigh station. It has an endpoint where the weigh station uploads its data to be shown. 
 After running the application as below, you can se the summary on the front page and use the
 request in lorry_passing.http to update the data in the server. There is also a simple python
-program passing_lorry.py that will using requests post some new data for testing.
+program passing_lorry.py that will use requests post some new data for testing.
 
 Getting Started
 ---------------
 
-- Change directory into your newly created project if not already there. Your
-  current directory should be the same as this README.txt file and setup.py.
+### Unix/Linux/MacOS/WSL
 
-    cd weigh_station
+- Change directory into your newly created project if not already there. Your
+  current directory should be the same as this README.txt file and setup.py. 
+
+        cd weigh_station
 
 - Create a Python virtual environment, if not already created.
 
-    python3 -m venv env
+        python3 -m venv env
 
 - Upgrade packaging tools, if necessary.
 
-    env/bin/pip install --upgrade pip setuptools
+        env/bin/pip install --upgrade pip setuptools
 
 - Install the project in editable mode with its testing requirements.
 
-    env/bin/pip install -e ".[testing]"
+        env/bin/pip install -e ".[testing]"
 
 - Run your project's tests.
 
-    env/bin/pytest
+        env/bin/pytest --cov
 
 - Run your project.
 
-    env/bin/pserve development.ini
+        env/bin/pserve development.ini
+
+### Windows 
+
+- Change directory into your newly created project if not already there. Your
+  current directory should be the same as this README.txt file and setup.py. 
+
+        cd weigh_station
+
+- Create a Python virtual environment, if not already created.
+
+        python3 -m venv env
+
+- Upgrade packaging tools, if necessary.
+
+        .\env\Scripts\python -m pip install --upgrade pip setuptools
+
+- Install the project in editable mode with its testing requirements.
+
+        .\env\Scripts\python -m pip install -e ".[testing]"
+
+- Run your project's tests.
+
+        .\env\Scripts\python -m pytest --cov
+
+- Run your project.
+
+        .\env\Scripts\pserve .\development.in
