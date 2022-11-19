@@ -11,8 +11,7 @@ Learning Goals
 Session Outline
 ---------------
 
-* 5 min Connect: How does one thing different creating new functions
-               and testing them
+* 5 min Connect: Developers compared to developers
 * 5 min concept: Testing mindset
 * 40 min concrete: Create test cases for weigh station
 * 5 min conclusions: How does the mindset make you find new issues
@@ -20,7 +19,8 @@ Session Outline
 Connect
 -------
 
-Name 2 facts about tester mindset and 1 fact about a coder mindset. 
+How would a user use software differently from the developer that
+created it? 
 
 
 Consept
@@ -30,17 +30,31 @@ Talk about the role of a tester, question how the application
 works for the users. The need for the software to prove its
 working that it has bug unless it can prove it self free
 of issues. The need to get your self into the mind of the user,
-and not only on the level of the user wo0uld like to order a book
+and not only on the level of the user would like to order a book
 so I make a test that orders a book. I like to refer to Blake
 Norris [article](https://medium.com/@blakenorrish/how-to-think-like-a-tester-7a174ff6aeaf).
 
 Concrete
 --------
 
-Test the weigh station kata and find a few bugs.
-If needed ask some questions, what should happen if a
-lorry have negative load? Can there be a half lorry?
-How do we change the name of a weigh station?
+Using the kata [weight station](https://github.com/balp/weigh_station),
+I'm pairs work on finding issues with the current implementation.
+
+One can find the issues either using mostly exploratory testing on
+with the web-interface and a rest api client. There is a simple python
+applications that can call the API and .http files that can be used form
+inside PyCharm or Visual Studio Code with the extension REST Client,
+suggested when one open a .http file the first time.
+
+Or adding more tests to the unit tests. Mostly these can be added in the
+`tests/test_view_default.py` file.
+
+If needed ask some questions:
+
+* What should happen if a lorry have negative load?
+* Can there be a half lorry?
+* How do we change the name of a weigh station?
+* What happens when a second weigh station starts to report lorries?
 
 
 Conclusions
