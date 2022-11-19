@@ -12,9 +12,10 @@ Session Outline
 ---------------
 
 * 5 min Connect: Developers compared to developers
-* 5 min concept: Testing mindset
-* 40 min concrete: Create test cases for weigh station
+* 10 min concept: Testing mindset
+* 35 min concrete: Create test cases for weigh station
 * 5 min conclusions: How does the mindset make you find new issues
+
 
 Connect
 -------
@@ -26,6 +27,13 @@ created it?
 Consept
 -------
 
+Explain the idea behind exploratory testing, how you as a tester
+could learn about how the software works. How this way of testing
+is a intellectual exersice in learning about the product. How one
+can combine this with adding scripted testing or using scripts to
+learn the behaviour of the code. Why this could be more described
+as a mind-set of the tester than a methodology.
+
 Talk about the role of a tester, question how the application
 works for the users. The need for the software to prove its
 working that it has bug unless it can prove it self free
@@ -33,6 +41,7 @@ of issues. The need to get your self into the mind of the user,
 and not only on the level of the user would like to order a book
 so I make a test that orders a book. I like to refer to Blake
 Norris [article](https://medium.com/@blakenorrish/how-to-think-like-a-tester-7a174ff6aeaf).
+
 
 Concrete
 --------
